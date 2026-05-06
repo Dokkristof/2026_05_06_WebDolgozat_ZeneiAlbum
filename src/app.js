@@ -45,10 +45,14 @@ function createAlbumTable(albums) {
   const tbody = document.createElement('tbody');
   albums.forEach(album => {
     const row = document.createElement('tr');
+    const isDouble = album.hossz > 50;
+    const titleCell = isDouble
+      ? `${album.cim} <button type="button" class="btn btn-danger btn-sm ms-2">Dupla album</button>`
+      : album.cim;
 
     row.innerHTML = `
       <td>${album.eloado}</td>
-      <td>${album.cim}</td>
+      <td>${titleCell}</td>
       <td>${album.ev}</td>
       <td>${album.mufaj}</td>
       <td>${album.hossz} perc</td>

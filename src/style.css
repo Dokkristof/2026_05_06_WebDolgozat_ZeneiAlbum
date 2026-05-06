@@ -16,11 +16,22 @@ h1 {
     border: none;
 }
 
-.table th,
-.table td {
-    background-color: #CFF4FC;
+.table-bordered th,
+.table-bordered td {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #2c465a;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #73bdee;
+.table thead th {
+    border-top: 1px solid #ffffff;
 }
+
+.table th,
+.table td {
+    background-color: #98cbe9;
+}
+
+
+
