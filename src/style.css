@@ -1,0 +1,26 @@
+/*
+* File: style.css
+* Author: Doktor Kristóf Márk
+* Copyright: 2026, Doktor Kristóf Márk
+* Group: Szoft I/N
+* Date: 2026-05-06
+* Github: https://github.com/dokkristof/
+* Licenc: MIT
+*/
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+.table {
+    border: none;
+}
+
+.table th,
+.table td {
+    background-color: #CFF4FC;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #73bdee;
+}
